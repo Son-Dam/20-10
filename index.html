@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💐 Thiệp mời 20/10 – Chị em Mẹt Ú (MedAvisor US)</title>
+  <meta name="description" content="Thư mời các nữ hoàng dự án MedAvisor US (chị em Mẹt Ú) đi ăn mừng 20/10 tại Nhà hàng Ottugi. Không đi là bị trừ KPI nhan sắc!" />
+  <meta property="og:title" content="💐 Thiệp mời 20/10 – Chị em Mẹt Ú" />
+  <meta property="og:description" content="Mời các nữ hoàng MedAvisor US đi ăn Ottugi mừng 20/10. Từ chối là không có nút đâu 😏" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💐</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --pink: #ff4f9a;
+      --pink-light: #ffd6e8;
+      --purple: #8b5cf6;
+      --yellow: #ffd23f;
+      --dark: #3b1d3a;
+      --white: #fffaf5;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Baloo 2", system-ui, sans-serif;
+      color: var(--dark);
+      background: linear-gradient(160deg, #ffe3f1 0%, #fff4d6 50%, #ecdcff 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .petals { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+    .petal {
+      position: absolute; top: -10vh; font-size: 1.6rem; opacity: .85;
+      animation: fall linear infinite;
+    }
+    @keyframes fall {
+      to { transform: translateY(115vh) rotate(540deg); }
+    }
+    main { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; padding: 24px 16px 60px; }
+
+    .card {
+      background: var(--white);
+      border-radius: 28px;
+      padding: 28px 24px;
+      margin: 22px 0;
+      box-shadow: 0 12px 40px rgba(139, 92, 246, .18);
+      border: 3px dashed var(--pink);
+      text-align: center;
+    }
+    .badge {
+      display: inline-block; background: var(--yellow); color: var(--dark);
+      padding: 4px 14px; border-radius: 999px; font-weight: 700; font-size: .9rem;
+      transform: rotate(-3deg); box-shadow: 0 3px 0 var(--dark);
+    }
+    h1 {
+      font-family: "Dancing Script", cursive;
+      font-size: clamp(2.6rem, 9vw, 4.4rem);
+      color: var(--pink);
+      line-height: 1.1;
+      margin: 14px 0 6px;
+      text-shadow: 3px 3px 0 var(--pink-light);
+    }
+    .sub { font-size: 1.15rem; font-weight: 700; color: var(--purple); }
+    .hero-emoji { font-size: 4.5rem; display: inline-block; animation: wiggle 1.6s ease-in-out infinite; }
+    @keyframes wiggle { 0%,100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg) scale(1.08); } }
+
+    h2 { font-size: 1.6rem; color: var(--pink); margin-bottom: 10px; }
+    p { font-size: 1.08rem; line-height: 1.6; margin: 8px 0; }
+    .small { font-size: .9rem; opacity: .75; font-style: italic; }
+    .hl { background: linear-gradient(transparent 55%, var(--yellow) 55%); font-weight: 800; }
+
+    .info { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin-top: 14px; }
+    .info div {
+      background: var(--pink-light); border-radius: 18px; padding: 14px;
+      font-weight: 700;
+    }
+    .info span { display: block; font-size: 2rem; }
+
+    .countdown { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    .countdown div {
+      background: var(--purple); color: #fff; border-radius: 16px; padding: 10px 6px; min-width: 76px;
+    }
+    .countdown b { display: block; font-size: 2rem; line-height: 1; }
+
+    .btn {
+      display: inline-block; border: none; cursor: pointer; text-decoration: none;
+      font-family: inherit; font-weight: 800; font-size: 1.1rem;
+      padding: 14px 26px; border-radius: 999px; margin: 8px;
+      transition: transform .15s;
+    }
+    .btn:hover { transform: scale(1.06); }
+    .btn-yes { background: var(--pink); color: #fff; box-shadow: 0 5px 0 #c2185b; }
+    .btn-map { background: var(--yellow); color: var(--dark); box-shadow: 0 5px 0 #c99a00; }
+    .btn-no { background: #ddd; color: #555; box-shadow: 0 5px 0 #aaa; position: relative; transition: left .2s, top .2s, transform .2s; }
+
+    .rsvp-area { position: relative; min-height: 120px; }
+    #rsvpMsg { font-weight: 800; color: var(--purple); font-size: 1.2rem; min-height: 1.6em; margin-top: 10px; }
+
+    ul.rules { text-align: left; list-style: none; max-width: 560px; margin: 0 auto; }
+    ul.rules li { padding: 8px 0 8px 36px; position: relative; font-size: 1.05rem; line-height: 1.5; }
+    ul.rules li::before { content: "💅"; position: absolute; left: 0; top: 7px; }
+
+    .quote {
+      font-family: "Dancing Script", cursive; font-size: 1.7rem; color: var(--purple);
+      min-height: 2.4em; display: flex; align-items: center; justify-content: center;
+    }
+
+    footer { text-align: center; font-size: .9rem; opacity: .7; margin-top: 30px; }
+
+    .toast {
+      position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%) translateY(150%);
+      background: var(--dark); color: #fff; padding: 12px 20px; border-radius: 14px;
+      font-weight: 700; z-index: 10; transition: transform .3s; max-width: 90vw; text-align: center;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .petal, .hero-emoji { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="card">
+      <span class="badge">📢 THÔNG BÁO KHẨN CẤP CẤP ĐỘ NHAN SẮC</span>
+      <div class="hero-emoji" aria-hidden="true">👑</div>
+      <h1>Kính mời các Nữ Hoàng<br />chị em Mẹt Ú</h1>
+      <p class="sub">dự án MedAvisor US 🇺🇸 (đọc nhanh thành "Mẹt Ú" cho thân thương)</p>
+      <p style="margin-top:14px">
+        Nhân dịp <span class="hl">20/10 – Ngày Phụ nữ Việt Nam</span>, hội anh em (và cả những người
+        chỉ biết code chứ không biết chọn quà) trân trọng kính mời các chị em
+        <b>xinh đẹp – giỏi giang – deadline nào cũng cân – bug nào cũng tìm ra</b>
+        đến dự buổi tiệc tôn vinh phái đẹp 🌸
+      </p>
+      <p class="small">(Lưu ý: ai nhận được thiệp này mặc nhiên được công nhận là xinh. Không nhận lại được.)</p>
+    </section>
+
+    <!-- INFO -->
+    <section class="card">
+      <h2>📍 Thông tin "phi vụ"</h2>
+      <div class="info">
+        <div><span>📅</span>Thứ Ba, 20/10/2026<br /><small id="timeText"></small></div>
+        <div><span>🍜</span>Nhà hàng <b>Ottugi</b><br /><small>Ăn đến khi váy chật thì thôi</small></div>
+        <div><span>👗</span>Dress code<br /><small>Lộng lẫy hoặc lồng lộn, tùy tâm trạng</small></div>
+      </div>
+      <a class="btn btn-map" id="mapLink" href="https://maps.app.goo.gl/GvGpDKkuzci4SyP88?g_st=ic" target="_blank" rel="noopener noreferrer">🗺️ Chỉ đường tới Ottugi</a>
+      <p class="small">Lạc đường thì gọi anh em, nhưng anh em cũng không biết đường đâu 🤡</p>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="card">
+      <h2>⏳ Đếm ngược tới giờ được cưng chiều</h2>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div><b id="cd-d">0</b>ngày</div>
+        <div><b id="cd-h">0</b>giờ</div>
+        <div><b id="cd-m">0</b>phút</div>
+        <div><b id="cd-s">0</b>giây</div>
+      </div>
+      <p class="small" id="cdNote">Nhịn ăn sáng từ bây giờ là vừa đẹp.</p>
+    </section>
+
+    <!-- RULES -->
+    <section class="card">
+      <h2>📜 Nội quy bất thành văn (nhưng vẫn viết ra)</h2>
+      <ul class="rules">
+        <li>Chị em <b>không phải trả tiền</b>. Anh em lo hết. Ví anh em đã được thông báo, ví đang khóc.</li>
+        <li>Mọi lời chị em nói hôm đó đều <b>đúng</b>. Nếu sai, xem lại điều trên.</li>
+        <li>Cấm nhắc tới Jira, ticket, sprint, UAT, hotfix trong bàn ăn. Vi phạm phạt uống 1 ly nước lọc.</li>
+        <li>Anh em có nhiệm vụ: rót nước, gắp đồ, khen đẹp, chụp ảnh <b>góc nghiêng thần thánh</b>.</li>
+        <li>Ảnh chụp xấu → anh em chụp lại tới khi đẹp. Không có giới hạn retry 🔁</li>
+        <li>Không đi = bị trừ KPI nhan sắc quý IV. Đùa thôi... hoặc không 😏</li>
+      </ul>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="card">
+      <h2>💌 Lời có cánh (tự động bay)</h2>
+      <p class="quote" id="quote">Chị em Mẹt Ú: code không bug, mặt không mụn, ví không vơi.</p>
+      <button class="btn btn-map" id="nextQuote" type="button">🎲 Thêm một lời nịnh nữa</button>
+    </section>
+
+    <!-- RSVP -->
+    <section class="card">
+      <h2>✋ Xác nhận tham dự</h2>
+      <p>Chị em có đi không ạ? (Câu hỏi tu từ thôi 🙂)</p>
+      <div class="rsvp-area" id="rsvpArea">
+        <button class="btn btn-yes" id="yesBtn" type="button">💖 Đi chứ! Chờ gì nữa</button>
+        <button class="btn btn-no" id="noBtn" type="button">😒 Không đi</button>
+      </div>
+      <p id="rsvpMsg" aria-live="polite"></p>
+    </section>
+
+    <footer>
+      Made with 💗 và một chút sợ hãi bởi hội anh em MedAvisor US<br />
+      Chúc mừng 20/10 – Chúc chị em Mẹt Ú mãi xinh, mãi trẻ, mãi được cưng! 🌷
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script>
+    // ====== Cấu hình sự kiện (sửa giờ ở đây nếu cần) ======
+    const EVENT = {
+      date: "2026-10-20T18:30:00+07:00",
+      timeLabel: "18:30 (đến muộn tự gắp)"
+    };
+
+    document.getElementById("timeText").textContent = EVENT.timeLabel;
+
+    // Cánh hoa rơi
+    const petals = document.getElementById("petals");
+    const icons = ["🌸", "🌷", "💐", "🌹", "💖", "✨"];
+    for (let i = 0; i < 22; i++) {
+      const p = document.createElement("span");
+      p.className = "petal";
+      p.textContent = icons[i % icons.length];
+      p.style.left = Math.random() * 100 + "vw";
+      p.style.animationDuration = 7 + Math.random() * 9 + "s";
+      p.style.animationDelay = -Math.random() * 15 + "s";
+      p.style.fontSize = 1 + Math.random() * 1.4 + "rem";
+      petals.appendChild(p);
+    }
+
+    // Đếm ngược
+    const target = new Date(EVENT.date).getTime();
+    const cdNote = document.getElementById("cdNote");
+    function tick() {
+      let diff = target - Date.now();
+      if (diff <= 0) {
+        ["d", "h", "m", "s"].forEach(k => (document.getElementById("cd-" + k).textContent = "0"));
+        cdNote.textContent = diff > -6 * 3600e3
+          ? "🎉 Tới giờ rồi! Chị em lên đồ đi, Ottugi đang chờ!"
+          : "🥲 Tiệc tàn rồi nhưng chị em vẫn đẹp như ngày 20/10. Hẹn 8/3 nhé!";
+        return;
+      }
+      const d = Math.floor(diff / 864e5); diff %= 864e5;
+      const h = Math.floor(diff / 36e5); diff %= 36e5;
+      const m = Math.floor(diff / 6e4); diff %= 6e4;
+      const s = Math.floor(diff / 1e3);
+      document.getElementById("cd-d").textContent = d;
+      document.getElementById("cd-h").textContent = h;
+      document.getElementById("cd-m").textContent = m;
+      document.getElementById("cd-s").textContent = s;
+    }
+    tick();
+    setInterval(tick, 1000);
+
+    // Lời nịnh ngẫu nhiên
+    const quotes = [
+      "Chị em Mẹt Ú: code không bug, mặt không mụn, ví không vơi.",
+      "Deadline sợ chị em, chứ chị em không sợ deadline.",
+      "Xinh như thế này thì PR nào cũng được approve.",
+      "Chị em là production – anh em chỉ là môi trường test thôi.",
+      "Gặp chị em, Google Maps cũng phải dừng lại ngắm.",
+      "Chị em không cần filter, filter cần chị em.",
+      "Bug có thể reopen, nhưng nhan sắc chị em thì không bao giờ close.",
+      "Một ngày không có chị em, standup chỉ còn là đứng.",
+      "Chị em đẹp đến mức client US cũng phải nói 'Wow, so beautiful!'",
+      "20/10 chỉ là cái cớ, chứ ngày nào chị em cũng là nữ hoàng 👑"
+    ];
+    let qi = 0;
+    const quoteEl = document.getElementById("quote");
+    document.getElementById("nextQuote").addEventListener("click", () => {
+      let n;
+      do { n = Math.floor(Math.random() * quotes.length); } while (n === qi);
+      qi = n;
+      quoteEl.textContent = quotes[qi];
+    });
+
+    // Toast
+    const toast = document.getElementById("toast");
+    let toastTimer;
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove("show"), 2600);
+    }
+
+    // Nút "Không đi" troll
+    const noBtn = document.getElementById("noBtn");
+    const yesBtn = document.getElementById("yesBtn");
+    const area = document.getElementById("rsvpArea");
+    const rsvpMsg = document.getElementById("rsvpMsg");
+    const noTexts = [
+      "😒 Không đi",
+      "🤨 Chắc chưa?",
+      "😳 Nghĩ lại đi mà",
+      "🥺 Anh em khóc đó",
+      "🙅 Nút này hỏng rồi",
+      "🍜 Ottugi buồn lắm",
+      "🤡 Bắt được thì đi nhé"
+    ];
+    let dodge = 0;
+    let yesScale = 1;
+    function runAway(e) {
+      if (e) e.preventDefault();
+      dodge++;
+      noBtn.textContent = noTexts[Math.min(dodge, noTexts.length - 1)];
+      const a = area.getBoundingClientRect();
+      const b = noBtn.getBoundingClientRect();
+      const maxX = Math.max(0, a.width - b.width);
+      const maxY = Math.max(0, a.height - b.height);
+      noBtn.style.position = "absolute";
+      noBtn.style.left = Math.random() * maxX + "px";
+      noBtn.style.top = Math.random() * maxY + "px";
+      noBtn.style.margin = "0";
+      yesScale = Math.min(yesScale + 0.12, 1.9);
+      yesBtn.style.transform = "scale(" + yesScale + ")";
+      if (dodge === 3) showToast("Nút 'Không đi' đang trong giai đoạn bảo trì 🚧");
+      if (dodge === 6) showToast("Gợi ý: nút màu hồng to đùng bên cạnh kìa 👉💖");
+      if (dodge >= 9) {
+        noBtn.remove();
+        showToast("Nút 'Không đi' đã nghỉ việc. Chỉ còn lựa chọn đúng thôi 😌");
+      }
+    }
+    noBtn.addEventListener("mouseenter", runAway);
+    noBtn.addEventListener("touchstart", runAway, { passive: false });
+    noBtn.addEventListener("click", runAway);
+
+    yesBtn.addEventListener("click", () => {
+      rsvpMsg.textContent = "Quá chuẩn! 💯 Hẹn chị em tối 20/10 tại Ottugi. Nhớ mang theo bụng đói và nụ cười xinh 😘";
+      yesBtn.textContent = "✅ Đã chốt đơn!";
+      if (noBtn.isConnected) noBtn.remove();
+      confetti();
+    });
+
+    // Confetti đơn giản
+    function confetti() {
+      const emojis = ["🎉", "💖", "🌸", "🎊", "👑", "💐", "✨"];
+      for (let i = 0; i < 60; i++) {
+        const c = document.createElement("span");
+        c.textContent = emojis[i % emojis.length];
+        c.style.cssText =
+          "position:fixed;z-index:20;pointer-events:none;font-size:" + (1 + Math.random() * 1.5) + "rem;" +
+          "left:50vw;top:60vh;transition:transform 1.6s cubic-bezier(.2,.8,.3,1),opacity 1.6s;";
+        document.body.appendChild(c);
+        requestAnimationFrame(() => {
+          const x = (Math.random() - 0.5) * window.innerWidth;
+          const y = -Math.random() * window.innerHeight * 0.7;
+          c.style.transform = "translate(" + x + "px," + y + "px) rotate(" + Math.random() * 720 + "deg)";
+          c.style.opacity = "0";
+        });
+        setTimeout(() => c.remove(), 1700);
+      }
+    }
+  </script>
+</body>
+</html>
